@@ -1,0 +1,126 @@
+
+        /* --- ESTILOS GERAIS --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* --- ANIMAÇÕES ARCO-ÍRIS (KEYFRAMES) --- */
+        
+        /* Animação para o Fundo da Página (Tons Pastéis) */
+        @keyframes rainbow-bg {
+            0%   { background-color: #ffb3b3; } /* Vermelho claro */
+            14%  { background-color: #ffe0b3; } /* Laranja claro */
+            28%  { background-color: #ffffcc; } /* Amarelo claro */
+            42%  { background-color: #d1f7d1; } /* Verde claro */
+            57%  { background-color: #d1e0f7; } /* Azul claro */
+            71%  { background-color: #e3d1f7; } /* Anil claro */
+            85%  { background-color: #f7d1f7; } /* Violeta claro */
+            100% { background-color: #ffb3b3; }
+        }
+
+        /* Animação para o Texto do Título */
+        @keyframes rainbow-text {
+            0%   { color: #ff0000; }
+            14%  { color: #ff7f00; }
+            28%  { color: #ffff00; }
+            42%  { color: #00ff00; }
+            57%  { color: #0000ff; }
+            71%  { color: #4b0082; }
+            85%  { color: #9400d3; }
+            100% { color: #ff0000; }
+        }
+
+        /* Animação para a Borda do Container */
+        @keyframes rainbow-border {
+            0%   { border-color: #ff0000; }
+            14%  { border-color: #ff7f00; }
+            28%  { border-color: #ffff00; }
+            42%  { border-color: #00ff00; }
+            57%  { border-color: #0000ff; }
+            71%  { border-color: #4b0082; }
+            85%  { border-color: #9400d3; }
+            100% { border-color: #ff0000; }
+        }
+
+        /* --- APLICAÇÃO DOS ESTILOS --- */
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Aplica a animação no fundo do site */
+            animation: rainbow-bg 6s ease-in-out infinite;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            
+            /* Aplica a animação na borda */
+            border: 5px solid #ff0000;
+            animation: rainbow-border 4s linear infinite;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 26px;
+            /* Aplica a animação no texto */
+            animation: rainbow-text 2.5s linear infinite;
+        }
+
+        /* --- CAMPOS DO FORMULÁRIO --- */
+        .input-group {
+            margin-bottom: 16px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #444444;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .input-group input:focus {
+            border-color: #333;
+            outline: none;
+        }
+
+        /* --- BOTÃO DE SUBMIT --- */
+        .btn-submit {
+            width: 100%;
+            padding: 11px;
+            background-color: #222222;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+
+        .btn-submit:hover {
+            background-color: #444444;
+        }
+
+
+    
