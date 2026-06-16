@@ -1,19 +1,15 @@
-function entrar(){
+function entrar() {
     let email, senha;
-    let message;
   
-   
-    email =( document.getElementById( "email" ).value );
-    senha =( document.getElementById( "senha" ).value );
-    message =( document.getElementById( "message" ).value );
+    email = document.getElementById("email").value;
+    senha = document.getElementById("senha").value;
 
-    if (senha == "123" && email == "igor@gmail.com"){
-        document.getElementById("message").innerHTML = "Email e senha corretos! Redirecionando..."
-    }else{
-          document.getElementById("message").innerHTML = "Email e senha incorretos!"
+    
+    if (senha == "123" && email == "igor@gmail.com") {
+        document.getElementById("message").innerHTML = "Email e senha corretos! Redirecionando...";
+        document.getElementById("message")
+    } else {
+        document.getElementById("message").innerHTML = "Email e senha incorretos!";
+        document.getElementById("message")
     }
-}
-
-function entrando(){
-    return entrar;
 }
